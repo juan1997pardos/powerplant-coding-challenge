@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  powerplant-api:
+    build: .
+    container_name: powerplant-api
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/app/data
